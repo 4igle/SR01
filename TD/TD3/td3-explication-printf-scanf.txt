@@ -1,0 +1,42 @@
+printf :
+%bsox.yt
+
+b => '#' pour non entier base 10, permet d'afficher le nombre précédé de sa base
+
+s => '+' pour un nombre en base 10, affiche son signe qu'il soit positif ou négatif
+
+o => '-' permet d'afficher le nombre au début/fin de l'espace qui lui a été donné avec 'x'
+
+x => nombre de place que prend le nombre lors de l'affichage
+
+.y => nombre de chiffres significatifs après la virgule ou nombre de lettres affichées d'une string
+
+t => type de la donnée affichée, mettre en majuscule pour afficher les nombres en majuscule
+    %d <-> int
+    %hd <-> short
+    %ld <-> long
+    %f <-> float
+    %lf <-> double
+    %c <-> char
+    %s <-> string
+    %p <-> pointer
+    %u <-> unsigned
+    %fu <-> unsigned float
+    %lu <-> unsigned long
+    %o <-> octal
+    %x <-> hexa
+    %X <-> hexa en majuscule
+    %e <-> exposant
+    %E <-> exposant en majuscule
+    %g <-> simplifie expression en choisissant double ou exposant en fonction du plus visuel
+    %G <-> même chose mais en majuscule
+
+scanf :
+%it
+
+i => lit le nombre sur i caractères max (point compris pour les float)
+t => type (on peut mettre %5c pour lire une string)
+  scanf("%4c%4c%4c",s4, s5, s6) lira 12 premiers, 8 après les 4 permiers, 4 après les 8 premiers
+
+
+ne pas oublier de vider le buffer

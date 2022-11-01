@@ -1,0 +1,43 @@
+mkdir TD1
+cd TD1
+touch fichier1 fichier2 ...
+
+cp fichier_a_copier copie
+mv fichier_origine fichier_destination
+rm fichier
+rm -r dossier
+mkdir dossier
+rmdir dossier
+
+chmod 777 fichier
+
+man commande
+
+ps -u user
+ps -ef
+
+ls *2023
+ls UTC*
+ls | grep "^UTC.\?$"
+ls *Monde*
+ls | grep -i "^a.*"
+
+
+
+gcc -o hello1 hello1.c
+./hello1
+
+gcc -o hello2 hello2.c
+./hello2
+
+gcc -o ex1a ex1a.c
+./ex1a
+
+gcc -o ex1b ex1b.c
+./ex1b
+
+gcc -o ex2 ex2.c
+./ex2
+
+gcc -o pgcd pgcd.c
+./pgcd
