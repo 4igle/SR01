@@ -104,8 +104,9 @@ Ce dépôt contient les codes des TDs et des DMs de l'UV SR01 de l'Université d
     │       └── teststring.c
     ├── Partie_2
     └── Partie_3
-``` 
+```
 ## 👨‍💻 - Langage utilisé
+
 - C
 
 ## 📝 - Licence
