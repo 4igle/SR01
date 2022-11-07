@@ -115,7 +115,7 @@ Ce dépôt contient les codes des TDs et des DMs de l'UV SR01 de l'Université d
 
 ## 📔 - Auteurs et contributeurs
 
--  **4igle**  - Tous les TD et DM - [4igle](https://github.com/4igle/)
+-  **Th3o-D**  - Tous les TD et DM - [Th3o-D](https://github.com/Th3o-D/)
 -   **sacha-sz** - Collaboration sur les DM - [sacha-sz](https://github.com/sacha-sz/)
 
 ## 📑 - Références
