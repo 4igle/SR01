@@ -1,0 +1,20 @@
+
+#il faut que les fichiers ".c" soient tous inclus dans le meme dossier que le makefile,
+#et n'oubliez pas d'ajouter teststring.c (vous pouvez copier teststring.c du td5 et ajouter (mystrUpdown.h, etc...).
+
+Source= $(wildcard *.c) #permet de dectecter les noms des fichiers qui porte une extention .c situé dans le dossier courant et les affectent à la variable SRC
+obj=$(Source:.c=.o) #permet chaque non de fichier dans la variable SRC, on remplace  le ".c" par un ".o"
+head= $(wildcard *.h) #permet de dectecte les noms des fichiers qui porte une extention .h situé dans le dossier courant et les affectent à la variable head
+
+# .PHONY permet d'indiquer les cibles que le make doit reconstruire
+.PHONY:all clean
+
+all:testing clean
+
+testing:$(obj) $(head)
+	gcc -o testing $(obj)
+
+%.o:%.c
+	gcc -c $^
+clean:
+	rm -rf *.o

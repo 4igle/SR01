@@ -1,0 +1,16 @@
+SRC = $(wildcard *.c)
+HEAD = $(wildcard *.h)
+OBJ = $(SRC:.c=.o)
+
+.PHONY : all clean
+
+all : result clean
+
+result: $(OBJ) $(HEAD)
+	gcc -o result $(OBJ)
+
+%.o: %.c
+	gcc -c $^
+
+clean:
+	rm -rf *.o
