@@ -1,4 +1,3 @@
-/* fop.c -- demo fopen fread ... */
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX_STRING_LENGTH 80
