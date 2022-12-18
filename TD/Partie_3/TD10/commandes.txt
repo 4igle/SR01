@@ -1,0 +1,40 @@
+# Ex1 :
+
+cat test.txt | grep [[:punct:]]
+
+cat test.txt | grep [[:space:]]
+
+cat test.txt | grep [[:space:]] | grep [[:punct:]]
+
+cat test.txt | grep -E [[:space:][:punct:]]
+cat test.txt | grep -E "[[:space:]|[:punct:]]"
+
+
+# Ex2 :
+grep -E "^06[[:digit:]]{8}$" tel.txt
+grep -E "^06[0-9]{8}$" tel.txt
+
+grep -Ecv "^06[[:digit:]]{8}$" tel.txt
+
+grep -E "^0[67][[:digit:]]{8}$" tel.txt
+
+grep -E "^0[67]([[:punct:]]?[[:digit:]]){8}$" tel.txt
+
+
+# Ex3 :
+# Cette commande exclut deja les points consecutifs et ceux
+echo "https://utc.fr" | grep -E ^[[:alnum:]]+://[[:alnum:].]+[[:alnum:]]+$
+
+echo "ftp://utc.fr" | grep -E "^(ftp|http)+://[[:alnum:].]+[[:alnum:]]+$"
+
+echo "ftp://utc.fr 3065" | grep -E "^(ftp|http)+://[[:alnum:].]+[[:alnum:]]+ ?([[:digit:]]+)?$"
+
+
+# Ex4 :
+echo testmail@gmail.com | sed 's/\(.*\)@\(.*\)/domaine=\1/'
+
+echo testmail@gmail.com | sed 's/\(.*\)@\(.*\)/login=\1 domaine=\2/'
+
+echo mister.propre@domaine.com | sed 's/\(.*\)\.\(.*\)@\(.*\)/prenom=\1 nom=\2 domaine=\3/'
+
+echo mister.propre@domaine.com | sed 's/\(.*\)\.\(.*\)@\(etu\..*\)/prenom=\1 nom=\2 domaine=\3/'
