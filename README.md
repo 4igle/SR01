@@ -6,7 +6,6 @@ Ce dépôt contient les codes des TDs et des DMs de l'UV SR01 de l'Université d
 
 . \
 ├── 📄 [LICENSE](./LICENSE) \
-├── 📄 [out.txt](./out.txt) \
 ├── 📄 [README.md](./README.md) \
 ├── 📁 [DM](./DM) \
 │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── 📁 [DM1](./DM/DM1) \
