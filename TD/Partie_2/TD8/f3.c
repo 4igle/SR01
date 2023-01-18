@@ -19,6 +19,5 @@ int main(){
     printf("Ici le parent, mon pid est %ld, le pid de mon fils est %ld\n", getpid(), pid_fils);
     printf("Exit status fils : %d\n", WEXITSTATUS(status));
   }
-
   return 0;
 }

@@ -1,0 +1,76 @@
+# Ex1
+
+# Q1) id
+# Q2) cat /etc/passwd | grep Malena
+# Q3) who / w
+# Q4) echo $SHELL
+
+
+# Ex2
+
+# Q1) cat /etc/passwd | cut -d: -f1
+# Q2) cat /etc/group | cut -d: -f1
+# Q3) sudo su / sudo -i / sudo (une seule commande)
+# Q4) mkdir Sauvegarde
+# Q5) cp /etc/passwd /etc/shadow /etc/group /etc/gshadow Sauvegarde
+
+# Q6)
+
+mkdir /home/linux
+mkdir /home/windows
+
+groupadd -g 1025 LINUX
+groupadd -g 1026 WINDOWS
+groupadd -g 1027 GroupeD
+groupadd -g 1028 GroupeV
+
+useradd malena -u 2022 --home-dir /home/linux --create-home -g LINUX --shell /bin/bash
+useradd xavier -u 2023 --home-dir /home/linux --create-home -g LINUX --shell /bin/bash
+useradd marie -u 2024 --home-dir /home/linux --create-home -g LINUX --shell /bin/bash
+useradd david -u 2025 --home-dir /home/linux --create-home -g LINUX --shell /bin/bash
+
+
+# Q7) passwd <user>
+
+# Q8) chage malena
+
+
+
+# Ex3
+
+# Q1) 
+touch emptyfile
+chmod 000 emptyfile
+ls -l
+
+chmod 4 emptyfile
+
+# Q2)
+ls -ld /tmp
+
+# sticky bit -> uniquement pour utilisateur qui à créé le fichier
+
+
+# Q3) grand S -> l'utilisateur propriétaire n'a pas les droits d'exécution
+
+# Q4)
+mkdir Box
+chown users Box
+chmod g+s Box
+chmod o+t Box
+
+
+# Ex4
+# Q1) useradd -m dave
+# Q2) non, pas de mot de passe
+# Q3) id dave
+# Q4) groupadd sys_admin web_admin db_admin
+# Q5) useradd -u 1035 -g sys_admin -G web_admin,db_admin carol
+
+# Q6)
+userdel carol dave
+groupdel sys_admin web_admin db_admin
+
+# Q7) aucun droit sauf lecture
+
+# Q8) suid, root

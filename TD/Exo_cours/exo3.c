@@ -15,6 +15,8 @@ int main(){
   printf("Tapez un nombre : \n");
   scanf("%d\n", &nombre);
 
+  alarm(0);
+
   printf("Nombre saisi, traitement du nombre\n");
 
 }
